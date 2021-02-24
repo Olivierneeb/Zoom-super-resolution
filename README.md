@@ -1,4 +1,4 @@
-# Zoom-super-resolution
+# Zoom Super Resolution
 
 ## Neural Network for Super Resolution
 
