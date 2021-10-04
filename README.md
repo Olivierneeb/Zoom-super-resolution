@@ -1,10 +1,28 @@
 # Zoom Super Resolution
 
-## Neural Network for Super Resolution
+The aim of this project is to enhance the resolution of zoomed area in a image. Inspired by the article entitled "Learning Deep CNN Denoiser Prior for Image Restoration" by Kai Zhang, I have used a CNN (convolutionnal neural network) with a similar structure.
+The dataset is composed of 900 images from the DIV2K dataset, split into 800 images for the train set and 100 for the test set.
 
-Upsacle by a factor 2 an under-determined 256x256 crop of an image and improve the output resolution of the same scene to a 512x512 image through a 5-layer neuronal network.
+<p align="center">
+  <img src = "images/div2K_exemple.jpg" width = "500">
+</p>
 
-<img src = "images/presentation_projet.PNG" width = "750">
+## Comparison method of the digital zoom improvements 
+
+Upscale by a factor 2 an under-determined 256x256 scene and improve the output resolution of the same scene to a 512x512 image through a 5-layer CNN.
+
+Description step-by-step process of resolution augmentation :  
+(a) in a super resolved image, a 512x512 snapshot will be consiedered as the ground truth  
+(b) in a under resolved image, a 256x256 snapshot of the same area is the image that will be improved  
+(c) result of a SRCNN improvement  
+(d) result of a VDSR improvement   
+(e) result of the CNN improvement in the article  
+
+
+<p align="center">
+  <img src = "images/presentation_projet.PNG" width = "750" >
+</p>
+
 
 ## Neural Network built : Unet structure 
 
