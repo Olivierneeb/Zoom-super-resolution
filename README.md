@@ -1,6 +1,6 @@
 # Zoom Super Resolution
 
-The aim of this project is to enhance the resolution of zoomed area in a image. Inspired by the article entitled "Learning Deep CNN Denoiser Prior for Image Restoration" by Kai Zhang, I have used a CNN (convolutionnal neural network) with a similar structure.
+  The aim of this project is to enhance the resolution of zoomed area in a image. Inspired by the article entitled "Learning Deep CNN Denoiser Prior for Image Restoration" by Kai Zhang, I have used a CNN (convolutionnal neural network) with a similar structure.  
 The dataset is composed of 900 images from the DIV2K dataset, split into 800 images for the train set and 100 for the test set.
 
 <p align="center">
