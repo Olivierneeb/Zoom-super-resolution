@@ -24,27 +24,42 @@ Description step-by-step process of resolution augmentation :
 </p>
 
 
-## Neural Network built : Unet structure 
+##  Unet structure of the CNN 
 
+<p align="center">
 <img src = "images/Unet.PNG" width = "750">
+</p>
 
-5 layers, 4 for convolution and downsizing and the final one to upscale the image.
+The used CNN is composed of 5 layers, 4 for convolution and downsizing and the final one to upscale the image.
 
 ## Reconstruction throughout the epochs
 
+<p align="center">
 <img src = "images/epoque.PNG" width = "750">
+</p>
 
-## Trainset and Testset error 
+The training of the CNN leads to the best results at around 10 epochs. Follow up of the training has been studied but leads to similar results, with a risk of overfitting. Therefore 10 epochs is the choice I made to compare resolution improvement as output of the CNN. 
 
+## Performances on train set and test set 
+
+<p align="center">
 <img src = "images/erreur_courbe.PNG" width = "750">
+</p>
+
+These curves describe the absolute mean error for the value of a given pixel, through the epochs.  
 
 ## Good Results 
 
-
+<p align="center">
 <img src = "images/exemple_1.PNG" width = "750">
+</p>
 
+The ouput of the CNN leads to a significant improvement in the details when it comes to texture; The skin of this strawberry for example is smoother but not blurred.   
 
 ## Difficulties 
 
-
+<p align="center">
 <img src = "images/difficultes.PNG" width = "750">
+</p>
+
+However the CNN seems to struggle with high spatial frequency. The Eiffel Tower iron patterns are not discriminated enoguh, and the writing on the german Parlement are also blurred. the CNN did keep these details, but it has a tendancy to not give enough weight, leading to a blurring of the area rather an improvement of the resolution. 
